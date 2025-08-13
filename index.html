@@ -10,9 +10,9 @@
 * {margin:0; padding:0; box-sizing:border-box;}
 body {font-family:'Inter', sans-serif; background:#f0f2f5; color:#333; line-height:1.6; overflow-x:hidden;}
 
-/* Header */
+/* Header with healthcare background */
 header {
-    background: linear-gradient(135deg, #1a73e8, #0d47a1);
+    background: url('https://images.unsplash.com/photo-1588776814546-fbc2c7d57f1b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5cGh8MHx8fGx8fHx8fHx8&ixlib=rb-4.0.3&q=80&w=1400') center/cover no-repeat;
     color:#fff;
     text-align:center;
     padding:120px 20px 100px 20px;
@@ -59,11 +59,10 @@ section h2 {color:#1a73e8; font-size:2rem; margin-bottom:25px; text-align:center
 }
 .mission ul li::before {content:"✔"; color:#1a73e8; font-weight:700; font-size:1.2rem; line-height:1.2;}
 
-/* Testimonials / Criteria */
-.testimonial {background:#f4f6f8; padding:30px; border-radius:12px; margin-bottom:20px; box-shadow:0 4px 12px rgba(0,0,0,0.05); animation:fadeIn 1s ease forwards;}
-.testimonial h4 {margin-bottom:15px; font-weight:600; color:#1a73e8;}
-.testimonial ul {list-style:none; padding:0; display:grid; gap:10px;}
-.testimonial ul li::before {content:"✔"; color:#1a73e8; font-weight:700; margin-right:8px;}
+/* Acquisition Criteria */
+.criteria {background:#f4f6f8; padding:30px; border-radius:12px; margin-bottom:20px; box-shadow:0 4px 12px rgba(0,0,0,0.05); animation:fadeIn 1s ease forwards;}
+.criteria ul {list-style:none; padding:0; display:grid; gap:10px;}
+.criteria ul li::before {content:"✔"; color:#1a73e8; font-weight:700; margin-right:8px;}
 
 /* Contact Form */
 .contact-form {display:flex; flex-direction:column; gap:15px;}
@@ -128,7 +127,7 @@ footer a:hover {text-decoration:underline;}
             </div>
             <div class="team-member">
                 <img src="https://via.placeholder.com/120" alt="Mark Phillips">
-                <h3>Cheif Operating Officer: Mark Phillips, MBA, LNHA, CHCE</h3>
+                <h3>COO: Mark Phillips, MBA, LNHA, CHCE</h3>
                 <p>Over 30 years of leadership in home health, hospice, and palliative care operations.</p>
             </div>
             <div class="team-member">
@@ -140,11 +139,11 @@ footer a:hover {text-decoration:underline;}
     </div>
 
     <!-- Acquisition Criteria -->
-    <div class="card testimonials">
+    <div class="card criteria">
         <h2>Acquisition Criteria</h2>
         <ul>
-            <li>Revenue: $1M – $150M</li>
-            <li>EBITDA: Minimum $500k</li>
+            <li>Revenue: $2M – $10M</li>
+            <li>EBITDA: Minimum $800k</li>
             <li>Location: Within a 2-hour radius of our hub</li>
             <li>Industry: Home Health, Hospice, and related healthcare services</li>
             <li>Owner Intent: Seeking smooth transition and succession planning</li>
@@ -154,11 +153,11 @@ footer a:hover {text-decoration:underline;}
     <!-- Contact Form -->
     <div class="card contact" id="contact">
         <h2>Contact Us</h2>
-        <form class="contact-form">
-            <input type="text" placeholder="Full Name" required>
-            <input type="email" placeholder="Email Address" required>
-            <input type="tel" placeholder="Phone Number" required>
-            <textarea rows="5" placeholder="Your Message" required></textarea>
+        <form class="contact-form" action="https://formspree.io/f/xzzvwpky" method="POST">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <input type="tel" name="phone" placeholder="Phone Number" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
             <button type="submit">Send Message</button>
         </form>
     </div>
@@ -167,7 +166,7 @@ footer a:hover {text-decoration:underline;}
 <!-- Footer -->
 <footer>
     &copy; 2025 Elite Health Holdings. All Rights Reserved.<br>
-    <a href="#">LinkedIn</a> | <a href="#">Email</a>
+    <a href="#">LinkedIn</a> | <a href="#">Twitter</a> | <a href="#">Email</a>
 </footer>
 
 <script>
