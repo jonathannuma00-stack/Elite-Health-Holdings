@@ -1,193 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Elite Health Holdings</title>
-  <style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elite Health Holdings</title>
+<style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #ffffff;
-      color: #333;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background-color: #ffffff;
+        color: #333;
     }
     header {
-      background: #0da7a0;
-      color: white;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+        background-color: #1e9e9d;
+        color: white;
+        padding: 15px 20px;
+        text-align: center;
     }
     header h1 {
-      margin: 0;
+        margin: 0;
+    }
+    nav {
+        margin-top: 10px;
     }
     nav a {
-      color: white;
-      margin-left: 1rem;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
+        color: white;
+        margin: 0 15px;
+        text-decoration: none;
+        font-weight: bold;
     }
     .hero {
-      text-align: center;
-      padding: 3rem 1rem;
-      background: #e8f8f7;
+        padding: 40px 20px;
+        text-align: center;
+        background-color: #f4fdfd;
     }
     .hero h2 {
-      color: #0da7a0;
-      font-size: 2.2rem;
-    }
-    .hero p {
-      font-size: 1.1rem;
-      max-width: 600px;
-      margin: auto;
-    }
-    .btn {
-      background: #0da7a0;
-      color: white;
-      padding: 0.8rem 1.5rem;
-      border: none;
-      border-radius: 5px;
-      font-size: 1rem;
-      cursor: pointer;
-      text-decoration: none;
-      display: inline-block;
-      margin-top: 1rem;
-    }
-    .btn:hover {
-      background: #0b8b85;
+        color: #1e9e9d;
     }
     section {
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
+        padding: 30px 20px;
+        max-width: 900px;
+        margin: auto;
     }
-    h3 {
-      color: #0da7a0;
+    h2 {
+        color: #1e9e9d;
+        margin-bottom: 10px;
     }
-    .team {
-      display: flex;
-      gap: 2rem;
-      flex-wrap: wrap;
-      justify-content: center;
+    .criteria-list {
+        list-style: none;
+        padding: 0;
     }
-    .member {
-      background: #f7fdfd;
-      padding: 1rem;
-      border-radius: 10px;
-      text-align: center;
-      width: 250px;
+    .criteria-list li {
+        background: #e7f8f8;
+        margin: 8px 0;
+        padding: 10px;
+        border-radius: 6px;
     }
-    .member h4 {
-      margin: 0.5rem 0 0;
+    .team-member {
+        margin-bottom: 20px;
     }
-    .contact-form {
-      background: #f1fafa;
-      padding: 2rem;
-      border-radius: 10px;
+    .team-member h3 {
+        margin: 5px 0;
+        color: #1e9e9d;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
     }
     input, textarea {
-      width: 100%;
-      padding: 0.7rem;
-      margin-bottom: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      font-size: 1rem;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
     }
-    footer {
-      background: #0da7a0;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
+    button {
+        background-color: #1e9e9d;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    button:hover {
+        background-color: #167f7d;
     }
     .call-now {
-      background: #0b8b85;
-      color: white;
-      padding: 0.7rem 1rem;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-      display: inline-block;
-      margin-top: 1rem;
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px 15px;
+        background-color: #1e9e9d;
+        color: white;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: bold;
     }
-    .call-now:hover {
-      background: #087772;
+    footer {
+        background-color: #1e9e9d;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        margin-top: 30px;
     }
-  </style>
+</style>
 </head>
 <body>
 
 <header>
-  <h1>Elite Health Holdings</h1>
-  <nav>
-    <a href="#strategy">Strategy</a>
-    <a href="#criteria">Criteria</a>
-    <a href="#team">Team</a>
-    <a href="#contact">Contact</a>
-  </nav>
+    <h1>Elite Health Holdings</h1>
+    <nav>
+        <a href="#strategy">Strategy</a>
+        <a href="#criteria">Criteria</a>
+        <a href="#team">Team</a>
+        <a href="#contact">Contact</a>
+    </nav>
 </header>
 
-<section class="hero">
-  <h2>Building a Premier Healthcare Network</h2>
-  <p>Elite Health Holdings acquires and integrates high-quality healthcare providers into a unified network focused on excellence, efficiency, and patient-centered care.</p>
-  <a href="#contact" class="btn">Get in Touch</a>
-  <a href="tel:2392490188" class="call-now">📞 Call Now</a>
-</section>
+<div class="hero">
+    <h2>Healthcare Roll-Up Strategy</h2>
+    <p>Focused on acquiring and growing exceptional healthcare companies within a 2-hour geographic radius for strategic expansion.</p>
+    <a class="call-now" href="tel:2392490188">📞 Call Now: 239-249-0188</a>
+</div>
 
 <section id="strategy">
-  <h3>Our Roll-Up Strategy</h3>
-  <p>We target established healthcare businesses and integrate them into a centralized holding structure, creating operational synergies and enhancing market presence in each geographic hub. Our first acquisition anchors the hub, with additional acquisitions within a two-hour radius to strengthen local market dominance.</p>
+    <h2>Our Strategy</h2>
+    <p>We pursue a hub-and-spoke model, making an initial acquisition in a key market, followed by 5-6 additional acquisitions within a 2-hour radius. This approach builds density, improves operational efficiency, and increases market presence.</p>
 </section>
 
 <section id="criteria">
-  <h3>Acquisition Criteria</h3>
-  <ul>
-    <li>Industry: Healthcare (Home Health, Hospice, Specialized Clinics, Medical Practices)</li>
-    <li>EBITDA: $500k to $5M (Lower EBITDA considered case-by-case)</li>
-    <li>Strong operational history and reputation for quality care</li>
-    <li>Located in high-growth or strategically valuable markets</li>
-  </ul>
+    <h2>Acquisition Criteria</h2>
+    <ul class="criteria-list">
+        <li>Industry: Healthcare (Home Health, Hospice, Specialty Care, and related services)</li>
+        <li>EBITDA: $500K – $5M</li>
+        <li>Geographic Focus: Within the United States</li>
+        <li>Strong management team in place</li>
+        <li>Potential for operational improvements and growth</li>
+    </ul>
 </section>
 
 <section id="team">
-  <h3>Leadership Team</h3>
-  <div class="team">
-    <div class="member">
-      <h4>Jonathan Numa</h4>
-      <p>Founder & CEO</p>
+    <h2>Our Team</h2>
+    <div class="team-member">
+        <h3>Jonathan Numa</h3>
+        <p>Founder & CEO</p>
     </div>
-    <div class="member">
-      <h4>David Numa</h4>
-      <p>Co-Founder & Managing Director</p>
+    <div class="team-member">
+        <h3>David Numa</h3>
+        <p>Co-Founder & Managing Director</p>
     </div>
-  </div>
 </section>
 
 <section id="contact">
-  <h3>Contact Us</h3>
-  <p>Phone: <strong>239-249-0188</strong></p>
-  <div class="contact-form">
-    <form action="https://formspree.io/f/mvgqypvp" method="POST">
-      <input type="text" name="name" placeholder="Your name" required />
-      <input type="email" name="email" placeholder="Your email" required />
-      <textarea name="message" placeholder="How can we help?" required></textarea>
-      <button class="btn" type="submit">Send Message</button>
+    <h2>Contact Us</h2>
+    <p>Phone: <strong>239-249-0188</strong></p>
+    <form action="https://formspree.io/f/xzzvwpky" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="_replyto" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
     </form>
-  </div>
 </section>
 
 <footer>
-  <p>&copy; <span id="year"></span> Elite Health Holdings. All rights reserved.</p>
+    <p>© 2025 Elite Health Holdings. All Rights Reserved.</p>
 </footer>
-
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
 
 </body>
 </html>
