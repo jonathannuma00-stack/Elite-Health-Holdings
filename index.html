@@ -6,83 +6,68 @@
   <title>Elite Health Holdings</title>
   <style>
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
       background: #ffffff;
       color: #333;
     }
     header {
-      background: #f8fdfd;
-      color: #006d77;
+      background: #0da7a0;
+      color: white;
       padding: 1rem 2rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      border-bottom: 2px solid #e0f2f1;
     }
     header h1 {
       margin: 0;
-      font-size: 1.5rem;
-      color: #006d77;
     }
     nav a {
-      color: #006d77;
-      margin: 0 0.75rem;
+      color: white;
+      margin-left: 1rem;
       text-decoration: none;
       font-weight: bold;
     }
     nav a:hover {
       text-decoration: underline;
     }
-    .btn {
-      background: #00a896;
-      color: white;
-      padding: 0.6rem 1.2rem;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      text-decoration: none;
-    }
-    .btn:hover {
-      background: #028090;
-    }
     .hero {
       text-align: center;
-      padding: 4rem 2rem;
-      background: #e0f7f5;
+      padding: 3rem 1rem;
+      background: #e8f8f7;
     }
     .hero h2 {
-      font-size: 2rem;
-      color: #006d77;
+      color: #0da7a0;
+      font-size: 2.2rem;
     }
     .hero p {
-      font-size: 1.2rem;
-      max-width: 700px;
-      margin: 1rem auto;
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: auto;
+    }
+    .btn {
+      background: #0da7a0;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 1rem;
+    }
+    .btn:hover {
+      background: #0b8b85;
     }
     section {
-      padding: 3rem 2rem;
-      max-width: 1000px;
+      padding: 2rem;
+      max-width: 900px;
       margin: auto;
     }
     h3 {
-      color: #006d77;
-      border-bottom: 2px solid #00a896;
-      padding-bottom: 0.5rem;
-    }
-    .criteria-list {
-      list-style: none;
-      padding: 0;
-    }
-    .criteria-list li {
-      background: #f0fdfa;
-      margin: 0.5rem 0;
-      padding: 0.8rem;
-      border-radius: 5px;
-      border-left: 4px solid #00a896;
+      color: #0da7a0;
     }
     .team {
       display: flex;
@@ -91,51 +76,47 @@
       justify-content: center;
     }
     .member {
-      text-align: center;
-      flex: 1 1 200px;
-      background: #f8fdfd;
+      background: #f7fdfd;
       padding: 1rem;
-      border-radius: 8px;
-      border: 1px solid #e0f2f1;
+      border-radius: 10px;
+      text-align: center;
+      width: 250px;
     }
-    .avatar {
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      background: #00a896;
-      display: inline-block;
-      margin-bottom: 0.5rem;
+    .member h4 {
+      margin: 0.5rem 0 0;
     }
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 0.8rem;
+    .contact-form {
+      background: #f1fafa;
+      padding: 2rem;
+      border-radius: 10px;
     }
     input, textarea {
-      padding: 0.6rem;
+      width: 100%;
+      padding: 0.7rem;
+      margin-bottom: 1rem;
       border: 1px solid #ccc;
       border-radius: 5px;
+      font-size: 1rem;
     }
     footer {
+      background: #0da7a0;
+      color: white;
       text-align: center;
       padding: 1rem;
-      background: #f8fdfd;
-      border-top: 2px solid #e0f2f1;
-      font-size: 0.9rem;
-      color: #555;
+      margin-top: 2rem;
     }
     .call-now {
-      display: inline-block;
-      margin-top: 1rem;
-      background: #00a896;
+      background: #0b8b85;
       color: white;
-      padding: 0.6rem 1.2rem;
+      padding: 0.7rem 1rem;
       border-radius: 5px;
       text-decoration: none;
       font-weight: bold;
+      display: inline-block;
+      margin-top: 1rem;
     }
     .call-now:hover {
-      background: #028090;
+      background: #087772;
     }
   </style>
 </head>
@@ -152,24 +133,24 @@
 </header>
 
 <section class="hero">
-  <h2>Building a Leading Healthcare Network</h2>
-  <p>Elite Health Holdings acquires and integrates high-quality healthcare businesses to create a stronger, more connected future for patients and providers.</p>
-  <a href="tel:2392490188" class="call-now">📞 Call Now: 239-249-0188</a>
+  <h2>Building a Premier Healthcare Network</h2>
+  <p>Elite Health Holdings acquires and integrates high-quality healthcare providers into a unified network focused on excellence, efficiency, and patient-centered care.</p>
+  <a href="#contact" class="btn">Get in Touch</a>
+  <a href="tel:2392490188" class="call-now">📞 Call Now</a>
 </section>
 
 <section id="strategy">
-  <h3>Our Strategy</h3>
-  <p>We focus on acquiring well-run healthcare businesses within a two-hour radius of our hub operations, allowing for operational efficiency and a shared network of resources. We work closely with founders and management to preserve culture while implementing growth strategies.</p>
+  <h3>Our Roll-Up Strategy</h3>
+  <p>We target established healthcare businesses and integrate them into a centralized holding structure, creating operational synergies and enhancing market presence in each geographic hub. Our first acquisition anchors the hub, with additional acquisitions within a two-hour radius to strengthen local market dominance.</p>
 </section>
 
 <section id="criteria">
   <h3>Acquisition Criteria</h3>
-  <ul class="criteria-list">
-    <li>Industry: Healthcare (Home Health, Hospice, Specialty Care)</li>
-    <li>Revenue: $1M–$10M annually</li>
-    <li>EBITDA: $250K+</li>
-    <li>Strong local brand reputation</li>
-    <li>Within 2-hour radius of hub markets</li>
+  <ul>
+    <li>Industry: Healthcare (Home Health, Hospice, Specialized Clinics, Medical Practices)</li>
+    <li>EBITDA: $500k to $5M (Lower EBITDA considered case-by-case)</li>
+    <li>Strong operational history and reputation for quality care</li>
+    <li>Located in high-growth or strategically valuable markets</li>
   </ul>
 </section>
 
@@ -177,12 +158,10 @@
   <h3>Leadership Team</h3>
   <div class="team">
     <div class="member">
-      <div class="avatar"></div>
       <h4>Jonathan Numa</h4>
       <p>Founder & CEO</p>
     </div>
     <div class="member">
-      <div class="avatar"></div>
       <h4>David Numa</h4>
       <p>Co-Founder & Managing Director</p>
     </div>
@@ -191,17 +170,19 @@
 
 <section id="contact">
   <h3>Contact Us</h3>
-  <p>Have an opportunity or want to learn more? Call us at <strong>239-249-0188</strong> or send us a message below.</p>
-  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-    <input type="text" name="name" placeholder="Your Name" required/>
-    <input type="email" name="email" placeholder="Your Email" required/>
-    <textarea name="message" placeholder="Your Message" required></textarea>
-    <button class="btn" type="submit">Send Message</button>
-  </form>
+  <p>Phone: <strong>239-249-0188</strong></p>
+  <div class="contact-form">
+    <form action="https://formspree.io/f/mvgqypvp" method="POST">
+      <input type="text" name="name" placeholder="Your name" required />
+      <input type="email" name="email" placeholder="Your email" required />
+      <textarea name="message" placeholder="How can we help?" required></textarea>
+      <button class="btn" type="submit">Send Message</button>
+    </form>
+  </div>
 </section>
 
 <footer>
-  &copy; <span id="year"></span> Elite Health Holdings. All Rights Reserved.
+  <p>&copy; <span id="year"></span> Elite Health Holdings. All rights reserved.</p>
 </footer>
 
 <script>
