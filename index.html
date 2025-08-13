@@ -10,30 +10,30 @@
 * {margin:0; padding:0; box-sizing:border-box;}
 body {font-family:'Inter', sans-serif; background:#f0f2f5; color:#333; line-height:1.6; overflow-x:hidden;}
 
-/* Header with hospital background + overlay + gradient fade */
+/* Header with healthcare background */
 header {
-    position:relative;
-    color:#fff;
-    text-align:center;
-    padding:120px 20px 100px 20px;
-    overflow:hidden;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    padding: 120px 20px 100px 20px;
+    overflow: hidden;
 }
-header::before {
-    content:"";
-    position:absolute;
-    top:0; left:0; width:100%; height:100%;
+
+/* Background image container */
+.header-bg {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
     background: url('https://images.unsplash.com/photo-1588776814546-fbc2c7d57f1b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1400&q=80') center/cover no-repeat;
-    z-index:0;
-    filter:brightness(0.5);
+    filter: brightness(0.6);
+    z-index: 0;
 }
-header::after {
-    content:"";
-    position:absolute;
-    bottom:0; left:0; width:100%; height:120px;
-    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, #f0f2f5 100%);
-    z-index:1;
+
+header h1, header p, .cta-button {
+    position: relative;
+    z-index: 1;
 }
-header h1, header p, .cta-button {position:relative; z-index:2;}
+
 header h1 {font-size:3rem; font-weight:700; margin-bottom:15px; animation:fadeInDown 1s ease forwards;}
 header p {font-size:1.2rem; opacity:0.9; margin-bottom:30px; animation:fadeInUp 1s ease forwards; animation-delay:0.3s;}
 .cta-button {
@@ -106,6 +106,7 @@ footer a:hover {text-decoration:underline;}
 
 <!-- Header -->
 <header>
+    <div class="header-bg"></div>
     <h1>Elite Health Holdings</h1>
     <p>Partnering with healthcare owners for smooth transitions and strategic growth</p>
     <a href="#contact" class="cta-button">Get in Touch</a>
@@ -197,6 +198,7 @@ cards.forEach(card => observer.observe(card));
 
 </body>
 </html>
+
 
 
 
