@@ -13,29 +13,28 @@ body {font-family:'Inter', sans-serif; background:#f0f2f5; color:#333; line-heig
 /* Header with healthcare background */
 header {
     position: relative;
-    text-align: center;
-    color: #fff;
-    height: 600px; /* fixed height for background */
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+    min-height: 500px;
+    background: url('https://images.unsplash.com/photo-1588776814546-fbc2c7d57f1b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1400') center/cover no-repeat;
+    background-color:#1a73e8; /* fallback */
+    color:#fff;
+    text-align:center;
+    padding:120px 20px 100px 20px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
 }
-.header-bg {
+header::before {
+    content: '';
     position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background: url('https://images.unsplash.com/photo-1588776814546-fbc2c7d57f1b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1400&q=80') center/cover no-repeat;
-    z-index: 0;
-    filter: brightness(0.6); /* dark overlay for readability */
+    top:0; left:0; right:0; bottom:0;
+    background: rgba(0,0,0,0.4); /* dark overlay for readability */
+    z-index:0;
 }
-.header-content {
-    position: relative;
-    z-index: 1;
-}
+header h1, header p, .cta-button {position: relative; z-index:1;}
 header h1 {font-size:3rem; font-weight:700; margin-bottom:15px; animation:fadeInDown 1s ease forwards;}
-header p {font-size:1.2rem; opacity:0.9; margin-bottom:30px; animation:fadeInUp 1s ease forwards; animation-delay:0.3s;}
+header p {font-size:1.2rem; opacity:0.95; margin-bottom:30px; animation:fadeInUp 1s ease forwards; animation-delay:0.3s;}
 .cta-button {
     display:inline-block; padding:15px 30px; background:#fff; color:#1a73e8; border-radius:8px; font-weight:600; text-decoration:none; transition:0.3s; animation:fadeInUp 1s ease forwards; animation-delay:0.6s;
 }
@@ -106,12 +105,9 @@ footer a:hover {text-decoration:underline;}
 
 <!-- Header -->
 <header>
-    <div class="header-bg"></div>
-    <div class="header-content">
-        <h1>Elite Health Holdings</h1>
-        <p>Partnering with healthcare owners for smooth transitions and strategic growth</p>
-        <a href="#contact" class="cta-button">Get in Touch</a>
-    </div>
+    <h1>Elite Health Holdings</h1>
+    <p>Partnering with healthcare owners for smooth transitions and strategic growth</p>
+    <a href="#contact" class="cta-button">Get in Touch</a>
 </header>
 
 <section>
@@ -200,6 +196,7 @@ cards.forEach(card => observer.observe(card));
 
 </body>
 </html>
+
 
 
 
