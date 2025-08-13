@@ -40,11 +40,14 @@ section h2 {color:#1a73e8; font-size:2rem; margin-bottom:25px; text-align:center
 .card.visible {opacity:1; transform:translateY(0);}
 .highlight {color:#1a73e8; font-weight:600;}
 
-/* Team */
-.team-member {margin-bottom:30px; text-align:center; display:flex; flex-direction:column; align-items:center; animation:fadeInUp 1s ease forwards;}
+/* Team side-by-side */
+.team-grid {
+    display:flex; flex-wrap:wrap; justify-content:center; gap:30px;
+}
+.team-member {flex:1 1 220px; text-align:center; padding:20px; background:#f4f6f8; border-radius:12px; animation:fadeInUp 1s ease forwards;}
 .team-member img {width:120px; height:120px; border-radius:50%; object-fit:cover; margin-bottom:15px; border:4px solid #1a73e8;}
 .team-member h3 {margin:0 0 10px 0; font-weight:600;}
-.team-member p {margin:0; color:#555; max-width:280px;}
+.team-member p {margin:0; color:#555;}
 
 /* Offerings & bullet list */
 .mission ul {
@@ -56,10 +59,11 @@ section h2 {color:#1a73e8; font-size:2rem; margin-bottom:25px; text-align:center
 }
 .mission ul li::before {content:"✔"; color:#1a73e8; font-weight:700; font-size:1.2rem; line-height:1.2;}
 
-/* Testimonials */
+/* Testimonials / Criteria */
 .testimonial {background:#f4f6f8; padding:30px; border-radius:12px; margin-bottom:20px; box-shadow:0 4px 12px rgba(0,0,0,0.05); animation:fadeIn 1s ease forwards;}
-.testimonial p {font-style:italic; margin-bottom:10px;}
-.testimonial h4 {margin:0; font-weight:600; color:#1a73e8;}
+.testimonial h4 {margin-bottom:15px; font-weight:600; color:#1a73e8;}
+.testimonial ul {list-style:none; padding:0; display:grid; gap:10px;}
+.testimonial ul li::before {content:"✔"; color:#1a73e8; font-weight:700; margin-right:8px;}
 
 /* Contact Form */
 .contact-form {display:flex; flex-direction:column; gap:15px;}
@@ -80,6 +84,7 @@ footer a:hover {text-decoration:underline;}
 @media(max-width:768px){
     header h1 {font-size:2.2rem;}
     header p {font-size:1rem;}
+    .team-grid {flex-direction:column; align-items:center;}
 }
 </style>
 </head>
@@ -110,39 +115,40 @@ footer a:hover {text-decoration:underline;}
     <!-- Leadership -->
     <div class="card team">
         <h2>Our Leadership</h2>
-        <div class="team-member">
-            <img src="https://via.placeholder.com/120" alt="Jonathan Numa">
-            <h3>Founder: Jonathan Numa</h3>
-            <p>Guiding our vision and ensuring integrity in every partnership.</p>
-        </div>
-        <div class="team-member">
-            <img src="https://via.placeholder.com/120" alt="David Numa">
-            <h3>Co-Founder: David Numa</h3>
-            <p>Driving operational excellence and strategic growth across regions.</p>
-        </div>
-        <div class="team-member">
-            <img src="https://via.placeholder.com/120" alt="Mark Phillips">
-            <h3>COO: Mark Phillips, MBA, LNHA, CHCE</h3>
-            <p>Over 30 years of leadership in home health, hospice, and palliative care operations. Ensures seamless integration and operational excellence during transitions.</p>
-        </div>
-        <div class="team-member">
-            <img src="https://via.placeholder.com/120" alt="Bowen Banbury">
-            <h3>Chairman: Bowen Banbury, MBA, CEPA</h3>
-            <p>Experienced entrepreneur and board leader, guiding corporate governance, strategic alignment, and value creation to support smooth ownership transitions.</p>
+        <div class="team-grid">
+            <div class="team-member">
+                <img src="https://via.placeholder.com/120" alt="Jonathan Numa">
+                <h3>Founder: Jonathan Numa</h3>
+                <p>Guiding our vision and ensuring integrity in every partnership.</p>
+            </div>
+            <div class="team-member">
+                <img src="https://via.placeholder.com/120" alt="David Numa">
+                <h3>Co-Founder: David Numa</h3>
+                <p>Driving operational excellence and strategic growth across regions.</p>
+            </div>
+            <div class="team-member">
+                <img src="https://via.placeholder.com/120" alt="Mark Phillips">
+                <h3>COO: Mark Phillips, MBA, LNHA, CHCE</h3>
+                <p>Over 30 years of leadership in home health, hospice, and palliative care operations.</p>
+            </div>
+            <div class="team-member">
+                <img src="https://via.placeholder.com/120" alt="Bowen Banbury">
+                <h3>Chairman: Bowen Banbury, MBA, CEPA</h3>
+                <p>Guiding corporate governance, strategic alignment, and value creation to support smooth transitions.</p>
+            </div>
         </div>
     </div>
 
-    <!-- Testimonials -->
+    <!-- Acquisition Criteria -->
     <div class="card testimonials">
-        <h2>Seller Success Stories</h2>
-        <div class="testimonial">
-            <p>"Elite Health Holdings made selling our business effortless. The transition was smooth, and our employees were taken care of."</p>
-            <h4>- Sarah M.</h4>
-        </div>
-        <div class="testimonial">
-            <p>"We trusted Jonathan and David to preserve our company culture — they exceeded our expectations."</p>
-            <h4>- Michael R.</h4>
-        </div>
+        <h2>Acquisition Criteria</h2>
+        <ul>
+            <li>Revenue: $2M – $10M</li>
+            <li>EBITDA: Minimum $800k</li>
+            <li>Location: Within a 2-hour radius of our hub</li>
+            <li>Industry: Home Health, Hospice, and related healthcare services</li>
+            <li>Owner Intent: Seeking smooth transition and succession planning</li>
+        </ul>
     </div>
 
     <!-- Contact Form -->
@@ -151,6 +157,7 @@ footer a:hover {text-decoration:underline;}
         <form class="contact-form">
             <input type="text" placeholder="Full Name" required>
             <input type="email" placeholder="Email Address" required>
+            <input type="tel" placeholder="Phone Number" required>
             <textarea rows="5" placeholder="Your Message" required></textarea>
             <button type="submit">Send Message</button>
         </form>
@@ -160,7 +167,7 @@ footer a:hover {text-decoration:underline;}
 <!-- Footer -->
 <footer>
     &copy; 2025 Elite Health Holdings. All Rights Reserved.<br>
-    <a href="#">LinkedIn</a> <a href="#">Email</a>
+    <a href="#">LinkedIn</a> | <a href="#">Twitter</a> | <a href="#">Email</a>
 </footer>
 
 <script>
@@ -176,6 +183,7 @@ cards.forEach(card => observer.observe(card));
 
 </body>
 </html>
+
 
 
 
